@@ -5,12 +5,21 @@ app = Flask(__name__)
 """
 Mock ODM service
 
-curl -v http://localhost:9081/DecisionService/rest/v1/validate/validate \
+----
+
+curl -s http://localhost:9081/hello
+
+Welcome
+
+----
+
+curl -s http://localhost:9081/DecisionService/rest/v1/validate/validate \
   --header "Content-Type: application/json" \
   --header "Basic: YWRtaW46YWRtaW4=" \
-  -d '{"emailAddress":"test@test.com", "zipCode":"90210"}'
+  -d '{"inAndOut": {"emailAddress":"test@test.com", "zipCode":"90210"}}'
 
-localhost:9081/DecisionService/rest/v1/validate/validate
+{"inAndOut": {"emailAddress": "test@test.com", "zipCode": "90210", "response": "hello"}}
+
 """
 
 @app.route('/hello')
