@@ -10,6 +10,7 @@ import cucumber.api.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import main.java.ODMJsonBuilder;
+import main.java.OLBProperties;
 
 public class ODMRestAPITestSteps {
 
@@ -25,8 +26,7 @@ public class ODMRestAPITestSteps {
 	@When("I send JSON as POST to endpoint")
 	public void send_JSON_as_POST_to_endpoint() {
 	    response = RestAssured.given()
-	    .baseUri("http://localhost")
-	    .port(9081)
+	    .baseUri(OLBProperties.getODMEndpoint())
 	    .contentType("application/json")
 	    .body(json)
 	    .when()

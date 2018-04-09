@@ -9,13 +9,14 @@ import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import main.java.ODMJsonBuilder;
+import main.java.OLBProperties;
 
 public class ODMRestAPITest {
 		
 	@Test 
 	public void
 	testODMExample001() {
-		RestAssured.baseURI = "http://localhost";
+		RestAssured.baseURI = OLBProperties.getODMEndpoint();
 	    Response response = RestAssured.given()
 	    .port(9081)
 	    .contentType("application/json")
@@ -40,7 +41,7 @@ public class ODMRestAPITest {
 	@Test(dataProvider="inAndOutExamples")
 	public void
 	testODMinAndOutExamples(String emailAddress, String zipCode, String expectedResponse) {
-		RestAssured.baseURI = "http://localhost";
+		RestAssured.baseURI = OLBProperties.getODMEndpoint();
 	    Response response = RestAssured.given()
 	    .port(9081)
 	    .contentType("application/json")

@@ -16,6 +16,12 @@ python mock-ODM.py
 
 ```
 mvn test
+
+To use `OLBProperties.properties`:
+
+mvn -DOLBPropertyFile=src\main\resources\OLBProperties.properties test
+
+mvn -DODM.endpoint=http://localhost:9081 test
 ```
 
 
