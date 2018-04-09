@@ -1,0 +1,41 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "inAndOut": {
+      "$id": "/properties/inAndOut",
+      "type": "object",
+      "properties": {
+        "emailAddress": {
+          "$id": "/properties/inAndOut/properties/emailAddress",
+          "type": "string",
+          "title": "The Emailaddress Schema ",
+          "default": "",
+          "examples": [
+            "test@test.com"
+          ]
+        },
+        "zipCode": {
+          "$id": "/properties/inAndOut/properties/zipCode",
+          "type": "string",
+          "title": "The Zipcode Schema ",
+          "default": "",
+          "examples": [
+            "90210"
+          ]
+        },
+        "response": {
+          "$id": "/properties/inAndOut/properties/response",
+          "type": "string",
+          "title": "The Response Schema ",
+          "default": "",
+          "examples": [
+            "hello"
+          ]
+        }
+      }
+    }
+  }
+}
