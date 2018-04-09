@@ -19,7 +19,7 @@ mvn test
 
 To use `OLBProperties.properties`:
 
-mvn -DOLBPropertyFile=src\main\resources\OLBProperties.properties test
+mvn -Dolb.properties=src\main\resources\olb.properties test
 
 mvn -DODM.endpoint=http://localhost:9081 test
 ```

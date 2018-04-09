@@ -11,7 +11,7 @@ public class OLBProperties {
 	private static Properties properties;
 
 	public static String getOLBPropertyLocation() {
-		String propertyFilePath = System.getProperty("OLBPropertyFile", "main//resources//OLBproperties.properties");
+		String propertyFilePath = System.getProperty("olb.properties", "main//resources//olb.properties");
 		return propertyFilePath;
 	}
 	
