@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import main.java.ODMJsonBuilder;
 
-public class ODMJsonBuilderTests {
+public class ODMJsonBuilderTest {
 	
 	@Test
 	public void testStaticJsonRequestExample001() throws JSONException {

@@ -1,8 +1,7 @@
 # OLB-ODM-Test
 
 
-
-## mock services
+## mock-services
 
 In the `mock-services` directory.
 
@@ -12,8 +11,19 @@ To run:
 python mock-ODM.py
 ```
 
-Verify running:
 
+## Running tests
+
+```
+mvn test
+```
+
+
+# Troubleshooting
+
+## Troubleshooting - mock-services
+
+Verify running:
 
 ```
 curl -s http://localhost:9081/hello
@@ -25,6 +35,7 @@ Output:
 Welcome
 ```
 
+----
 
 Example making ODM call:
 

@@ -1,4 +1,4 @@
-package main.java;
+package test.java;
 
 import org.hamcrest.Matchers;
 import org.testng.Reporter;
@@ -8,8 +8,9 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
+import main.java.ODMJsonBuilder;
 
-public class TestODMRestAPI {
+public class ODMRestAPITest {
 		
 	@Test 
 	public void

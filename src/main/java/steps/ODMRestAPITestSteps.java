@@ -11,7 +11,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import main.java.ODMJsonBuilder;
 
-public class TestODMRestAPISteps {
+public class ODMRestAPITestSteps {
 
 	private RestAssured restAssured;
 	private Response response;

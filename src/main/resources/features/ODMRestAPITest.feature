@@ -1,8 +1,8 @@
-Feature: TestODMRestAPI
+Feature: ODMRestAPITest
 
   Testing ODM with Rest API calls.
   
-  Scenario Outline: validate and response
+  Scenario Outline: validate email, zipcode, and response
   
     Given User email "<email>" and zipcode "<zipcode>"
     When I send JSON as POST to endpoint
